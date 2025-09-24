@@ -1,4 +1,4 @@
-/// <reference types="react-scripts" />
+/// <reference types="vite/client" />
 
 declare module 'web-vitals' {
   export function getCLS(onPerfEntry?: (metric: any) => void): void;
