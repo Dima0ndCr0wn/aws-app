@@ -12,7 +12,7 @@ frontend:
         - npm run build
         - echo "Build completed successfully"
   artifacts:
-    baseDirectory: build
+    baseDirectory: dist
     files:
       - '**/*'
   cache:
