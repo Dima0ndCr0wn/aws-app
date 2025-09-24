@@ -4,7 +4,7 @@ frontend:
     preBuild:
       commands:
         - echo "Installing dependencies..."
-        - npm install
+        - npm ci
         - echo "Dependencies installed successfully"
     build:
       commands:
