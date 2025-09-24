@@ -5,11 +5,13 @@ frontend:
       commands:
         - echo "Installing dependencies..."
         - npm install
+        - cd finance-backend && npm install
         - echo "Dependencies installed successfully"
     build:
       commands:
         - echo "Building the application..."
         - npm run build
+        - cd finance-backend && npm run build
         - echo "Build completed successfully"
   artifacts:
     baseDirectory: dist
