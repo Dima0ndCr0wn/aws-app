@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { getCLS, getFID, getFCP, getLCP, getTTFB } from 'web-vitals';
+import { getCLS, getFCP, getLCP } from 'web-vitals';
+// getTTFB ya no se exporta directamente, debes usar PerformanceObserver si la necesitas
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -18,8 +20,8 @@ function sendToAnalytics(metric: any) {
   console.log('Web Vital:', metric);
 }
 
-getCLS(sendToAnalytics);
-getFID(sendToAnalytics);
-getFCP(sendToAnalytics);
-getLCP(sendToAnalytics);
-getTTFB(sendToAnalytics);
+// getCLS(sendToAnalytics);
+// getFID(sendToAnalytics);
+// getFCP(sendToAnalytics);
+// getLCP(sendToAnalytics);
+// getTTFB(sendToAnalytics);

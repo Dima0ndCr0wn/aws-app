@@ -7,3 +7,4 @@ declare module 'web-vitals' {
   export function getLCP(onPerfEntry?: (metric: any) => void): void;
   export function getTTFB(onPerfEntry?: (metric: any) => void): void;
 }
+
