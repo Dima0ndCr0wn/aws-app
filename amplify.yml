@@ -10,8 +10,8 @@ frontend:
     build:
       commands:
         - echo "Building the application..."
-        - npm run build
-        - cd finance-backend && tsc
+        - cd .. && npm run build
+        - cd finance-backend && npm run dev 
         - echo "Build completed successfully"
   artifacts:
     baseDirectory: dist
