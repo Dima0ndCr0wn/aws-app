@@ -1,0 +1,23 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - echo "Installing dependencies..."
+        - npm ci
+        - echo "Dependencies installed successfully"
+    build:
+      commands:
+        - echo "Building the application..."
+        - npm run build
+        - echo "Build completed successfully"
+  artifacts:
+    baseDirectory: build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+  environment:
+    variables:
+      GENERATE_SOURCEMAP: false
